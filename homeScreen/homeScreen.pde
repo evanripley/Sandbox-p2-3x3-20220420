@@ -1,5 +1,7 @@
 //Global Variables
-color black=0, resetWhite=255, red=color(255, 0, 0); //Not night mode (lots of Blue)
+color black=0, resetWhite=255;
+color  red=color(255, 0, 0), yellow=color(255, 255, 0);//Not night mode (lots of Blue)
+Boolean turnOnYellow=false;
 float rectWidth, rectHeight, ptDiameter;
 //Points are organized by row and actaully ... hint-hint ... value
 int numberOfPoints = 17;
@@ -11,10 +13,16 @@ float[] buttonY = new float[numberofButtons];
 float[] buttonWidth = new float[numberofButtons];
 float[] buttonHeight = new float[numberofButtons];
 //
+PImage img1, img2, img3;
+//
 void setup()
 {
   fullScreen(); //displayWidth, displayHeight
   displayOrientation();
+  //
+  img1 = loadImage("shaco1cs.jpg");
+  img2 = loadImage("shaco2cs.png");
+  img3 = loadImage();
   //
   //Population
   rectWidth = appWidth*1/3;
@@ -47,6 +55,9 @@ void setup()
   buttonHeight[3] = appHeight*(1.0/3.0)*(1.0/5.0);
   //
   printArray(buttonX);
+  printArray(buttonY);
+  printArray(buttonWidth);
+  printArray(buttonHeight);
   //
 }//End setup
 //
@@ -62,10 +73,37 @@ void draw() {
   rect(ptX[10], ptY[10], rectWidth, rectHeight);
   rect(ptX[11], ptY[11], rectWidth, rectHeight);
   //
+  //hover is yellow
+  if (mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight[1]) {
+    fill(yellow);
+    rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
+  } else {
+    fill(black);
+    rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
+  } //button 1
+  if (mouseX>=buttonX[2] && mouseX<=buttonX[2]+buttonWidth[2] && mouseY>=buttonY[2] && mouseY<=buttonY[2]+buttonHeight[2]) {
+    fill(yellow);
+    rect(buttonX[2], buttonY[2], buttonWidth[2], buttonHeight[2]);
+  } else {
+    fill(black);
+    rect(buttonX[2], buttonY[2], buttonWidth[2], buttonHeight[2]);
+  } //button 2
+  if (mouseX>=buttonX[3] && mouseX<=buttonX[3]+buttonWidth[3] && mouseY>=buttonY[3] && mouseY<=buttonY[3]+buttonHeight[3]) {
+    fill(yellow);
+    rect(buttonX[3], buttonY[3], buttonWidth[3], buttonHeight[3]);
+  } else {
+    fill(black);
+    rect(buttonX[3], buttonY[3], buttonWidth[3], buttonHeight[3]);
+  } //button 3
+  if (mouseX>=ptX[3] && mouseX<=ptX[3]+rectWidth && mouseY>=ptY[3] && mouseY<=ptY[3]+rectHeight) {
+    fill(yellow);
+    rect(ptX[3], ptY[3], rectWidth, rectHeight);
+  } else {
+    fill(black);
+    rect(ptX[3], ptY[3], rectWidth, rectHeight);
+  } //button 4 (reset)
+  //
   fill(black);
-  rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
-  rect(buttonX[2], buttonY[2], buttonWidth[2], buttonHeight[2]);
-  rect(buttonX[3], buttonY[3], buttonWidth[3], buttonHeight[3]);
   fill(resetWhite); //Best Practice
   //
   fill(black);
