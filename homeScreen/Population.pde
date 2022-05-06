@@ -72,8 +72,8 @@ void population() {
   //
   pic1 = loadImage ("shaco1cs.jpg");
   pic2 = loadImage ("shaco2cs.png");
-  //pic3 = loadImage ("shaco3cs.");
-  //pic4 = loadImage ("shaco4cs.");
+  pic3 = loadImage ("gragas.png");
+  pic4 = loadImage ("shaco3cs.png");
   //pic5 = loadImage ("shaco5cs.");
   //
   image1X = width*1/3;
