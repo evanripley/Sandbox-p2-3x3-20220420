@@ -109,22 +109,6 @@ void button7() {
   fill(white);
 }
 
-void button8() {
-  rect(button8X, button8Y, button8Width, button8Height);
-  if (mouseX>=button8X && mouseX<=button8X+button8Width && mouseY>=button8Y && mouseY<=button8Y+button8Height) {
-    fill(black);
-    rect(button8X, button8Y, button8Width, button8Height);
-    fill(white);
-  } else {
-    stroke(#645c5d);
-    fill(#dfdbde); 
-    rect(button8X, button8Y, button8Width, button8Height);
-    stroke(black);
-    fill(#645c5d);
-  }
-  fill(white);
-}
-
 
 void quitButton() {
   rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);

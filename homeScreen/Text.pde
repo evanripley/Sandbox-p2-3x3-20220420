@@ -21,17 +21,17 @@ void sec5Text() {
 }
 
 void sec6Text() {
-  textAlign (CENTER, TOP);
+  textAlign (CENTER, CENTER);
   textFont(secFont, 30);
   fill(black);
   text(box6Text, text6X, text6Y, text6Width, text6Height);
-  fill(black);
+  fill(white);
   textFont(secFont);
 }
 void sec1Text() {
   textAlign (CENTER, TOP);
   textFont(secFont, 25);
-  fill(#FFFFFF);
+  fill(black);
   text(box1Text, pt1X, text1Y, rectWidth, text1Height);
   textFont(secFont);
   fill(white);
