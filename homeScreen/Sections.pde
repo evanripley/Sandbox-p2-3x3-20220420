@@ -1,8 +1,8 @@
-String box6Text= "place jack in the box";
-String box1Text= "“quick lil graggy break !";
-String box8Text= "l bozo";
+String sec6Text= "place jack in the box";
+String sec1Text= "“quick lil graggy break !";
+String sec8Text= "l bozo";
 String next= "next";
-String start= "learn to shaco";
+String sec5Text= "learn to shaco";
 String quit= "quit";
 String restart= "relearn";
 
@@ -16,10 +16,10 @@ void sec5() {
 }
 
 void sec6() {
-  if (sec6On == true) {
-    sec6Text();
+  if (sec6On == true) {    
     image(pic2, image2X, image2Y, imageWidth, imageHeight);
     button2();
+    sec6Text();
   }
 }
 
@@ -27,7 +27,6 @@ void sec1() {
   if (sec1On == true) {
     sec1Text();
     image(pic3, image3X, image3Y, imageWidth, imageHeight);
-    
     button3();
   }
 }

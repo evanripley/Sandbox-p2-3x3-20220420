@@ -16,7 +16,7 @@ void restartText() {
 void sec5Text() {
   textAlign (CENTER, CENTER);
   textFont(secFont, 100);
-  text(start, pt6X, pt6Y, rectWidth, rectHeight);
+  text(sec5Text, pt6X, pt6Y, rectWidth, rectHeight);
   textFont(secFont);
 }
 
@@ -24,15 +24,15 @@ void sec6Text() {
   textAlign (CENTER, CENTER);
   textFont(secFont, 30);
   fill(black);
-  text(box6Text, text6X, text6Y, text6Width, text6Height);
+  text(sec6Text, text6X, text6Y, text6Width, text6Height);
   fill(white);
   textFont(secFont);
 }
 void sec1Text() {
-  textAlign (CENTER, TOP);
+  textAlign (CENTER, BOTTOM);
   textFont(secFont, 25);
   fill(black);
-  text(box1Text, pt1X, text1Y, rectWidth, text1Height);
+  text(sec1Text, pt1X, text1Y, rectWidth, text1Height);
   textFont(secFont);
   fill(white);
 }
