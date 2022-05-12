@@ -1,6 +1,10 @@
 String sec6Text= "place jack in the box";
 String sec1Text= "“quick lil graggy break !";
 String sec8Text= "l bozo";
+String sec7Text= "clone then run";
+String sec3Text= "abilities. study them! theres a test tomorrow";
+String sec4Title= "LORE!!";
+String sec4Text= "Crafted long ago as a plaything for a lonely prince, the enchanted marionette Shaco now delights in murder and mayhem. Corrupted by dark magic and the loss of his beloved charge, the once-kind puppet finds pleasure only in the misery of the poor souls he torments. He uses toys and simple tricks to deadly effect, finding the results of his bloody “games” hilarious—and for those who hear a dark chuckle in the dead of night, the Demon Jester may have marked them as his next plaything.";
 String next= "next";
 String sec5Text= "learn to shaco";
 String quit= "quit";
@@ -24,17 +28,16 @@ void sec6() {
 }
 
 void sec1() {
-  if (sec1On == true) {
-    sec1Text();
+  if (sec1On == true) {    
     image(pic3, image3X, image3Y, imageWidth, imageHeight);
     button3();
+    sec1Text();
   }
 }
 
 void sec9() {
   if (sec9On == true) {
-    image(pic7, image7X, image7Y, imageWidth, imageHeight);
-            
+    image(pic7, image7X, image7Y, imageWidth, imageHeight);     
     button4();
   }
 }
@@ -51,6 +54,8 @@ void sec8() {
 void sec4() {
   if (sec4On == true) {
     line(pt5X, pt5Y, pt6X, pt6Y);
+    sec4Title();
+    sec4Text();
     button6();
   }
 }
@@ -59,6 +64,7 @@ void sec7() {
   if (sec7On == true) {
     image(pic5, image5X, image5Y, imageWidth, imageHeight);
     line(pt9X, pt9Y, pt10X, pt10Y);
+    sec7Text();
     button7();
   }
 }
@@ -66,11 +72,9 @@ void sec7() {
 void sec3() {
 
   if (sec3On == true) {
-      image(pic6, image6X, image6Y, imageWidth, imageHeight);
-      
-      line(pt3X, pt3Y, pt7X, pt7Y);
-      
-      
+      image(pic6, image6X, image6Y, imageWidth, imageHeight);      
+      line(pt3X, pt3Y, pt7X, pt7Y);  
+      sec3Text();
     }
   }
 

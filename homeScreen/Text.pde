@@ -19,6 +19,33 @@ void sec5Text() {
   text(sec5Text, pt6X, pt6Y, rectWidth, rectHeight);
   textFont(secFont);
 }
+void sec4Text() {
+  textAlign (CENTER, BOTTOM);
+  textFont(secFont, 16);
+  text(sec4Text, pt5X, pt5Y, rectWidth, rectHeight);
+  textFont(secFont);
+}
+void sec3Text() {
+  textAlign (CENTER, CENTER);
+  textFont(secFont, 18);
+  fill(black);
+  text(sec3Text, pt3X, pt3Y, rectWidth, rectHeight);
+  textFont(secFont);
+}
+void sec4Title() {
+  textAlign (CENTER, TOP);
+  textFont(secFont, 40);
+  fill(green);
+  text(sec4Title, pt5X, pt5Y, rectWidth, rectHeight);
+  textFont(secFont);
+}
+void sec7Text() {
+  textAlign (CENTER, BOTTOM);
+  textFont(secFont, 75);
+  fill(orange);
+  text(sec7Text, pt9X, pt9Y, rectWidth, rectHeight);
+  textFont(secFont);
+}
 
 void sec6Text() {
   textAlign (CENTER, TOP);
@@ -31,10 +58,10 @@ void sec6Text() {
 void sec1Text() {
   textAlign (CENTER, CENTER);
   textFont(secFont, 25);
-  fill(black);
-  text(sec1Text, text6X, text6Y, rectWidth*1, rectHeight);
-  textFont(secFont);
+  fill(orange);
+  text(sec1Text, pt1X, pt1Y, rectWidth, rectHeight);
   fill(white);
+  textFont(secFont);
 }
 //
 //

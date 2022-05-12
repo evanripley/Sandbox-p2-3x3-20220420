@@ -10,7 +10,7 @@ float text6X, text6Y, text6Width, text6Height, text1Y, text1Height, text8Y;
 float image1X, image1Y, image2X, image2Y, image3X, image3Y, image4X, image4Y, image5X, image5Y, image6X, image6Y, image7X, image7Y,image8X, image8Y, imageWidth, imageHeight;
 PImage pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8;
 PFont secFont, buttonFont;
-color white = #FFFFFF, black = #000000, purple = #C0B2CC, darkPurple = #786a87, gray = #ACABAD, green = #2EFF4F;
+color white = #FFFFFF, black = #000000, purple = #C0B2CC, darkPurple = #786a87, gray = #ACABAD, green = #2EFF4F, orange = #F59014;
 Boolean sec6On=false, sec1On=false, sec9On=false, sec8On=false, sec4On=false, sec7On=false, sec3On=false, picOn=false;
 
 void setup() {
