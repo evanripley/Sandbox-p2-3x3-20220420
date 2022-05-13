@@ -74,3 +74,31 @@ void button1Text() {
   text(next, button1X, button1Y, button1Width, button1Height);
   fill(white);
 }
+void button2Text() {
+  textAlign (CENTER, CENTER);
+  textFont(buttonFont);
+  fill(gray);
+  text(click, button2X, button2Y, button2Width, button2Height);
+  fill(white);
+}
+void button3Text() {
+  textAlign (CENTER, CENTER);
+  textFont(buttonFont2);
+  fill(red);
+  text(beg, button3X, button3Y, button3Width, button3Height);
+  fill(white);
+}
+void button4Text() {
+  textAlign (CENTER, CENTER);
+  textFont(buttonFont2);
+  fill(white);
+  text(joke, button4X, button4Y, button4Width, button4Height);
+  fill(white);
+}
+void button6Text() {
+  textAlign (CENTER, CENTER);
+  textFont(buttonFont2);
+  fill(white);
+  text(dont, button6X, button6Y, button6Width, button6Height);
+  fill(white);
+}

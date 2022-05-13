@@ -18,6 +18,7 @@ void button2() {
   if ( mouseX>=button2X && mouseX<=button2X+button2Width && mouseY>=button2Y && mouseY<=button2Y+button2Height) {
     fill(black);
     rect(button2X, button2Y, button2Width, button2Height);
+    button2Text();
     fill(white);
   } else {
     stroke(darkPurple);
@@ -34,6 +35,7 @@ void button3() {
   if ( mouseX>=button3X && mouseX<=button3X+button3Width && mouseY>=button3Y && mouseY<=button3Y+button3Height) {
     fill(black);
     rect(button3X, button3Y, button3Width, button3Height);
+    button3Text();
     fill(white);
   } else {
     stroke(#6a5f50);
@@ -50,6 +52,7 @@ void button4() {
   if ( mouseX>=button4X && mouseX<=button4X+button4Width && mouseY>=button4Y && mouseY<=button4Y+button4Height) {
     fill(black);
     rect(button4X, button4Y, button4Width, button4Height);
+    button4Text();
     fill(white);
   } else {
     stroke(darkPurple);
@@ -82,6 +85,7 @@ void button6() {
   if ( mouseX>=button6X && mouseX<=button6X+button6Width && mouseY>=button6Y && mouseY<=button6Y+button6Height) {
     fill(black);
     rect(button6X, button6Y, button6Width, button6Height);
+    button6Text();
     fill(white);
   } else {
     stroke(#493243);
@@ -113,7 +117,7 @@ void button7() {
 void quitButton() {
   rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
   if ( mouseX>=quitButtonX && mouseX<=quitButtonX+quitButtonWidth && mouseY>=quitButtonY && mouseY<=quitButtonY+quitButtonHeight) {
-    fill(gray);
+    fill(red2);
     rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
     fill(white);
     quitText();
@@ -122,7 +126,7 @@ void quitButton() {
     fill(white);
     rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
     stroke(black);
-    fill(gray);
+    fill(red2);
     quitText();
   }
   fill(white);
@@ -130,7 +134,7 @@ void quitButton() {
 void restartButton() {
   rect(restartButtonX, restartButtonY, restartButtonWidth, restartButtonHeight);
   if ( mouseX>=restartButtonX && mouseX<=restartButtonX+restartButtonWidth && mouseY>=restartButtonY && mouseY<=restartButtonY+restartButtonHeight) {
-    fill(gray);
+    fill(red2);
     rect(restartButtonX, restartButtonY, restartButtonWidth, restartButtonHeight);
     fill(white);
     restartText();
@@ -139,7 +143,7 @@ void restartButton() {
     fill(white);
     rect(restartButtonX, restartButtonY, restartButtonWidth, restartButtonHeight);
     stroke(black);
-    fill(gray);
+    fill(red2);
     restartText();
   }
   fill(white);

@@ -1,5 +1,5 @@
 void rectangles() {
-  fill(purple);
+  fill(red);
   rect(pt1X, pt1Y, rectWidth, rectHeight);
   rect(pt2X, pt2Y, rectWidth, rectHeight);
   rect(pt3X, pt3Y, rectWidth, rectHeight);
@@ -13,6 +13,7 @@ void rectangles() {
 }
 
 void points() {
+  fill(black);
   ellipse(pt1X, pt1Y, ptDiameter, ptDiameter);
   ellipse(pt2X, pt2Y, ptDiameter, ptDiameter);
   ellipse(pt3X, pt3Y, ptDiameter, ptDiameter);
